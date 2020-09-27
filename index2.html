@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration page
+        </title>
+        <script LANGUAGE="JavaScript">
+          function display() {
+          DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+          message = "<ul><li><b>NAME: </b>" + document.form1.user.value;
+          message += "<li><b>EMAIL: </b>" + document.form1.email.value;
+          message += "<li><b>PHONE: </b>" + document.form1.mbno.value;
+            
+          message += "<li><b>DOB: </b>" + document.form1.dob.value; + "</ul>";
+          DispWin.document.write(message);
+          }
+          </script>
+          
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="global.css">   
+    <script src="util3.js" type="text/javascript"></script>
+<style>
+  .c{color:red;font-style: bold;}
+  .c2{color:red;font-style: bold;}
+  .c3{color:red;font-style: bold;}
+  .c4{color:red;font-style: bold;}
+
+.c1{color:red;font-style: bold;}
+label{
+  color:rgba(16, 29, 145, 0.801);
+  font-style: italic;
+}
+
+</style>
+    </head>
+    <body >
+         <section class="container-fluid bg-img">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-3">
+                        <form  name="form1" class="container" method="get" action="paragraph.html"  class="container"   onsubmit="return validate2();">
+                          <h1>Registration</h1>
+     
+                          <div class="form-group">
+                              <label for="username">Username:</label><input type="text"  NAME="user" id="user" placeholder="username" class="form-control"><span id="s" class="c"></span>
+            
+                            </div>
+                            
+                            <div class="form-group">
+                             <label for="email">Email:</label> <input type="email" NAME="email" class="form-control" id="email" placeholder="email"><span id="s" class="c3"></span>
+           
+                            </div>
+                            <div class="form-group">
+                              <label for="mobile">Mobileno:</label><input type="number" class="form-control" id="mbno"  NAME="mbno" placeholder="mobileno"><span id="s" class="c1"></span>
+                            </div>
+                            <div class="form-group">
+                   <label for="dob">Date of birth:</label><input type="text" id="dob" class="form-control" NAME="dob" placeholder="Dateofbirth"><span id="s" class="c2"></span>
+                   <span id="s" class="c4"></span>
+                              </div>
+                    
+                          <center>
+                            <input type="button"  class="btn btn-primary " value="display" onclick="display();"  />
+                            <input type="submit"  class="btn btn-primary " value="submit"  />
+                           <input type="reset" value="reset" class="btn btn-primary " /><br><br>
+                           <a href="index.html">HOME</a>
+                          </center>
+                           
+                          </form>
+                </section>
+            </section>
+
+        </section>
+       </html>

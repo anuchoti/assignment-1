@@ -1,4 +1,4 @@
-
+   
                function validate1()
                 {
                    var user= document.getElementById("user").value;
@@ -40,7 +40,7 @@
                 function validate12()
                 {
                     var email=document.getElementById("email").value;
-                    var re2=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+                    var re2=/^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{3}$/;
                   
                     if(!re2.test(email))
                     {
