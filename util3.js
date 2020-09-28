@@ -3,7 +3,7 @@
                 {
                    var user= document.getElementById("user").value;
                    
-                   var re=/^[a-z-A-Z][a-z0-9#$]{1,10}$/;
+                   var re=/^[a-zA-Z][a-z0-9#$]{1,10}$/;
                    if(!re.test(user))
                    {
                        //document.write("cannot be empty");
