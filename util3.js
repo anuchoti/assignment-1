@@ -3,7 +3,7 @@
                 {
                    var user= document.getElementById("user").value;
                    
-                   var re=/^[a-z][a-z0-9#$]{1,10}$/;
+                   var re=/^[a-z-A-Z][a-z0-9#$]{1,10}$/;
                    if(!re.test(user))
                    {
                        //document.write("cannot be empty");
@@ -21,7 +21,7 @@
                 {
                    
                    var mbno= document.getElementById("mbno").value;
-                   var re1=/^([1-9])([234789]{1})([0-9]{8})$/;
+                   var re1=/^([1-9]{1})([234789]{1})([0-9]{8})$/;
 
                  
                    if(!re1.test(mbno))
